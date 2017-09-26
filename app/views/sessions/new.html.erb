@@ -1,0 +1,12 @@
+<h1>Login!</h1>
+
+<%=form_tag "/login" do %>
+Name:
+<%=text_field_tag 'user[name]'%>
+Password:
+<%=password_field_tag 'user[password]'%>
+Password Confirmation:
+<%=password_field_tag 'user[password_confirmation]'%>
+<%=submit_tag "Login"%>
+
+<%end%>
